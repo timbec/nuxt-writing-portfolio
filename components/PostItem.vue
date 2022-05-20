@@ -7,7 +7,6 @@
       </nuxt-link>
     </h3>
     <div class="the-excerpt" v-html="post.excerpt.rendered"></div>
-    <h5>Post id: #{{ post.id }}:</h5>
   </div>
 </template>
 

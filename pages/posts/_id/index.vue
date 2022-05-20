@@ -1,7 +1,7 @@
 <template>
     <div class="single-post-page">
         <section class="post">
-            <h1 class="post-title">{{ loadedPost.title.rendered }}</h1>
+            <h1 class="post-title" v-html="loadedPost.title.rendered"></h1>
             <div class="post-details">
                 <div class="post-detail">Last updated on {{ loadedPost.date }}</div>
             </div>
@@ -22,8 +22,11 @@
 import axios from 'axios';
 
 export default {
+    data: {
+
+    },
     asyncData(context) {
-        console.log(context.params.id);
+        console.log(context);
         return axios.get("https://timbeckett-writing.com/wp-json/wp/v2/posts?slug=" + context.params.id)
             .then(res => {
                 console.log(res.data[0]);

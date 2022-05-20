@@ -4,7 +4,7 @@
       <h1 class="title">Home</h1>
       <Loader v-if="$fetchState.pending" />
       <div v-else>
-        <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.id" :slug="post.slug"
+        <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
           :title="post.title" />
       </div>
     </div>

@@ -1,10 +1,11 @@
-# STORE
+# Writing Portfolio
 
-**This directory is not required, you can delete it if you don't want to use it.**
 
-This directory contains your Vuex Store files.
-Vuex Store option is implemented in the Nuxt.js framework.
+This is a headless Nuxt.js front end to my long-neglected writing portfolio at https://timbeckett-writing.com. 
 
-Creating a file in this directory automatically activates the option in the framework.
+Working roughly off: 
+https://www.udemy.com/course/nuxtjs-vuejs-on-steroids/
 
-More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/vuex-store).
+And: 
+
+https://github.com/bovas85/nuxt-headless
