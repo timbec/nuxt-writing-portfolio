@@ -16,7 +16,7 @@ import PostItem from "@/components/PostItem";
 import Loader from "@/components/Loader";
 
 /**
- * Need to bundles into store
+ * Need to bundle into store
  */
 export default {
   components: {
@@ -30,7 +30,7 @@ export default {
   },
   async fetch() {
     const { data: posts } = await axios.get(
-      "http://localhost:8888/writing-portfolio/wp-json/wp/v2/posts"
+      "https://timbeckett-writing.com/wp-json/wp/v2/posts"
     );
     this.posts = posts;
   }

@@ -1,16 +1,11 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">Posts</h1>
+      <h1 class="title">Home</h1>
       <Loader v-if="$fetchState.pending" />
       <div v-else>
-        <post-item v-for="post in posts" 
-        :post="post" 
-        :key="post.id" 
-        :id="post.id"
-        :slug="post.slug"
-        :title="post.title"
-        />
+        <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.id" :slug="post.slug"
+          :title="post.title" />
       </div>
     </div>
   </div>
@@ -36,7 +31,7 @@ export default {
   },
   async fetch() {
     const { data: posts } = await axios.get(
-      "http://localhost:8888/writing-portfolio/wp-json/wp/v2/posts"
+      "https://timbeckett-writing.com/wp-json/wp/v2/posts"
     );
     this.posts = posts;
   }

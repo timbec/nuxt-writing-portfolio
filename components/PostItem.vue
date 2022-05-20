@@ -1,6 +1,6 @@
 <template>
   <div class="post-item">
-    
+
     <h3>
       <nuxt-link :to="postLink">
         {{ post.title.rendered }}
@@ -14,11 +14,19 @@
 <script>
 export default {
   props: {
+    id: {
+      type: String,
+      required: true
+    },
+    slug: {
+      type: String,
+      required: true
+    },
     post: {
       type: Object,
-      default: () => {}
+      default: () => { }
     }
-  }, 
+  },
   computed: {
     postLink() {
       return '/posts/' + this.slug
