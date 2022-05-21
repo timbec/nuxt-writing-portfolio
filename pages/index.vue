@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">Home</h1>
+      <h1 class="title">Home Page</h1>
       <Loader v-if="$fetchState.pending" />
       <div v-else>
         <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
@@ -13,7 +13,7 @@
 
 <script>
 import axios from "axios";
-import PostItem from "@/components/PostItem";
+// import PostList from "@/components/PostList";
 import Loader from "@/components/Loader";
 
 /**
@@ -22,11 +22,11 @@ import Loader from "@/components/Loader";
 export default {
   components: {
     Loader,
-    PostItem
+    // PostList
   },
   data() {
     return {
-      posts: []
+      loadedPosts: []
     };
   },
   async fetch() {
