@@ -24,6 +24,12 @@ export default {
     Loader,
     // PostList
   },
+  // store isn't working - not sure what I'm missing. 
+  // computed: {
+  //   loadedPosts() {
+  //     return this.$store.getters.loadedPosts
+  //   }
+  // }
   data() {
     return {
       loadedPosts: []
@@ -34,6 +40,7 @@ export default {
       "https://timbeckett-writing.com/wp-json/wp/v2/posts"
     );
     this.posts = posts;
+    // console.log(this.posts);
   }
 };
 </script>

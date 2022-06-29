@@ -7,6 +7,15 @@
       <li>
         <nuxt-link to="/about">About</nuxt-link>
       </li>
+      <li>
+        <nuxt-link to="/fiction">Fiction</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/blogs">Blogs</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/places">Places</nuxt-link>
+      </li>
     </ul>
   </div>
 </template>

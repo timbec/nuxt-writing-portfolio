@@ -3,7 +3,7 @@
 
     <h3>
       <nuxt-link :to="postLink">
-        {{ post.title.rendered }}
+        <p v-html="post.title.rendered"></p>
       </nuxt-link>
     </h3>
     <div class="the-excerpt" v-html="post.excerpt.rendered"></div>
@@ -28,7 +28,9 @@ export default {
   },
   computed: {
     postLink() {
-      return '/posts/' + this.slug
+      // QUESTION - is it going to be possible to store everything under proper '/category/post' slug, or should I just make the slug the name, with no category? 
+      // Maybe a seperate call for the category, which is then appelled to the url below? 
+      return '/fiction/' + this.slug
     }
   }
 };
