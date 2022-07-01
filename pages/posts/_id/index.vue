@@ -24,9 +24,10 @@ import axios from 'axios';
 export default {
 
     asyncData(context) {
+        console.log('context.params.id: ' + context.params.id);
         return axios.get("https://timbeckett-writing.com/wp-json/wp/v2/posts?slug=" + context.params.id)
             .then(res => {
-                console.log(res.data[0]);
+                // console.log(res.data[0]);
                 return {
                     loadedPost: res.data[0]
                 }
