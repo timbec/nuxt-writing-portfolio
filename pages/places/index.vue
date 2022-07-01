@@ -10,7 +10,7 @@
             </article>
             <Loader v-if="$fetchState.pending" />
             <div v-else>
-                <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
+                <places-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
                     :title="post.title" />
             </div>
         </div>
@@ -19,7 +19,8 @@
 
 <script>
 import axios from "axios";
-// import PostList from "@/components/PostList";
+///import PostList from "@/components/PostList";
+import PlacesItem from "@/components/PlacesItem";
 import Loader from "@/components/Loader";
 
 /**
@@ -29,6 +30,7 @@ export default {
     components: {
         Loader,
         // PostList
+        PlacesItem
     },
     // store isn't working - not sure what I'm missing. 
     // computed: {
@@ -38,15 +40,16 @@ export default {
     // }
     data() {
         return {
-            loadedPosts: []
+            posts: []
         };
     },
     async fetch() {
+        // get local site for now, so I can get featured images. 
         const { data: posts } = await axios.get(
-            "https://uraniumcity-history.com/wp-json/wp/v2/places"
+            "http://uchistory.local/wp-json/wp/v2/places"
         );
         this.posts = posts;
-        // console.log(this.posts);
+        console.log(this.posts);
     }
 };
 </script>

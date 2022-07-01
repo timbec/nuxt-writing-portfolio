@@ -21,7 +21,7 @@ import Loader from "@/components/Loader";
 export default {
   components: {
     Loader,
-    PostItem
+    PlacesItem
   },
   data() {
     return {

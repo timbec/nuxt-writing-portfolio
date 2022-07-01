@@ -22,9 +22,7 @@
 import axios from 'axios';
 
 export default {
-    data: {
 
-    },
     asyncData(context) {
         return axios.get("https://timbeckett-writing.com/wp-json/wp/v2/posts?slug=" + context.params.id)
             .then(res => {

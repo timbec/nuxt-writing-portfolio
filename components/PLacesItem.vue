@@ -1,11 +1,11 @@
 <template>
-  <div class="post-item">
+  <div class="places-item">
     <!-- Need to put in an 'if' statement to check if 
     // thumbnail exists. -->
     <img v-bind:src="post.fimg_url" v-bind:alt="post.title.rendered">
 
     <h3>
-      <nuxt-link :to="postLink">
+      <nuxt-link :to="placesLink">
         <p v-html="post.title.rendered"></p>
       </nuxt-link>
     </h3>
@@ -30,10 +30,10 @@ export default {
     }
   },
   computed: {
-    postLink() {
+    placesLink() {
       // QUESTION - is it going to be possible to store everything under proper '/category/post' slug, or should I just make the slug the name, with no category? 
       // Maybe a seperate call for the category, which is then appelled to the url below? 
-      return '/posts/' + this.slug
+      return '/places/' + this.slug
     }
   }
 };
