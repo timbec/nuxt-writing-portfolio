@@ -4,8 +4,14 @@
       <h1 class="title">Home Page</h1>
       <Loader v-if="$fetchState.pending" />
       <div v-else>
-        <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
-          :title="post.title" />
+        <post-item v-for="post in posts" 
+        :post="post" 
+        :key="post.id" 
+        :id="post.slug" 
+        :slug="post.slug"
+        :title="post.title" 
+        :thumbnail="post.fimg_url" 
+        />
       </div>
     </div>
   </div>
@@ -32,7 +38,8 @@ export default {
   // }
   data() {
     return {
-      loadedPosts: []
+      //loadedPosts: []
+      posts: []
     };
   },
   async fetch() {
@@ -40,7 +47,6 @@ export default {
       "https://timbeckett-writing.com/wp-json/wp/v2/posts"
     );
     this.posts = posts;
-    // console.log(this.posts);
   }
 };
 </script>

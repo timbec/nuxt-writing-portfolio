@@ -1,5 +1,8 @@
 <template>
   <div class="post-item">
+    <!-- Need to put in an 'if' statement to check if 
+    // thumbnail exists. -->
+    <img v-bind:src="post.fimg_url" v-bind:alt="post.title.rendered">
 
     <h3>
       <nuxt-link :to="postLink">
