@@ -32,12 +32,6 @@ export default {
         // PostList
         PlacesItem
     },
-    // store isn't working - not sure what I'm missing. 
-    // computed: {
-    //   loadedPosts() {
-    //     return this.$store.getters.loadedPosts
-    //   }
-    // }
     data() {
         return {
             posts: []
