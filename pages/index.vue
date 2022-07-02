@@ -1,17 +1,11 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">Home Page</h1>
+      <h3 class="title">Home Page</h3>
       <Loader v-if="$fetchState.pending" />
       <div v-else>
-        <post-item v-for="post in posts" 
-        :post="post" 
-        :key="post.id" 
-        :id="post.slug" 
-        :slug="post.slug"
-        :title="post.title" 
-        :thumbnail="post.fimg_url" 
-        />
+        <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
+          :title="post.title" :thumbnail="post.fimg_url" />
       </div>
     </div>
   </div>

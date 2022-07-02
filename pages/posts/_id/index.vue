@@ -4,7 +4,7 @@
             <section class="post">
                 <h1 class="post-title" v-html="loadedPost[0].title.rendered"></h1>
                 <div class="post-details">
-                    <div class="post-detail">Last updated on {{ loadedPost[0].date }}</div>
+                    <div class="post-detail">Last updated on {{ loadedPost[0].date || date }}</div>
                 </div>
                 <div class="post-content">
                     <div v-html="loadedPost[0].content.rendered"></div>

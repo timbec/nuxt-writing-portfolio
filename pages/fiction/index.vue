@@ -5,6 +5,7 @@
             <p class="intro">
                 Some intro text about my fiction.
             </p>
+
             <Loader v-if="$fetchState.pending" />
             <div v-else>
                 <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"

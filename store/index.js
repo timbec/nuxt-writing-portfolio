@@ -8,7 +8,7 @@ const createStore = () => {
         },
         mutations: {
             setPosts(state, posts) {
-                state.loadedPosts = posts;
+                state.loadedPosts = posts
             }
         },
         actions: {
@@ -19,6 +19,7 @@ const createStore = () => {
                         for (const key in res.data) {
                             postsArray.push({ ...res.data[key], id: key });
                         }
+
                         vuexContext.commit("setPosts", postsArray);
                     })
                     .catch(e => context.error(e));

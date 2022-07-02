@@ -1,0 +1,139 @@
+/*1200px*/
+/* 1000px */
+/* 800px; */
+/* 600px; */
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat&family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,500, 600, 700");
+@import url("https://fonts.googleapis.com/css?family=Archivo:500, 700|Open+Sans:300,700");
+@import url("https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@500&family=Montserrat:wght@400;700&family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap");
+/**
+body {
+ font-family: 'Cardo', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+ font-family: 'Oswald', sans-serif;
+ text-transform: uppercase;
+}
+**/
+h1 {
+	font-size: 8rem;
+	color: #09012d;
+}
+
+h1 a {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	font-family: "Archivo", sans-serif;
+	font-family: "Montserrat", sans-serif;
+	text-transform: uppercase;
+	font-size: 8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #09012d;
+}
+
+h2,
+h3,
+h4 {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #09012d;
+}
+
+p {
+	font-family: "Didact Gothic", sans-serif;
+	font-family: "Cardo", serif;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 300;
+	color: #09012d;
+	font-size: 1.6rem;
+}
+
+a {
+	font-family: "Open Sans", sans-serif;
+	font-family: "Monterrat", sans-serif;
+	font-family: "Cardo", serif;
+	font-family: "Quicksand", sans-serif;
+	font-weight: 300;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #09012d;
+	box-shadow: none;
+}
+
+a:hover {
+	color: #c6372c;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity 5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+	opacity: 0;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+	html {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: "Didact Gothic", sans-serif;
+	color: #6d5d4b;
+	font-weight: 400;
+	line-height: 1.6;
+	padding: 0;
+	margin: 0;
+}
+
+#__nuxt {
+	max-width: 120rem;
+	margin: 0 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */
