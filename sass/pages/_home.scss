@@ -6,7 +6,32 @@
         justify-content: space-between;
 
         .post-item {
-            width: 45%;
+            width: 48%;
+            position: relative;
+
+            @include respond('tab-port') {
+                width: 100%;
+            }
+
+            h3 {
+                @include absCenter;
+
+                a {
+                    color: white;
+                    font-size: 3rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        padding: .5rem;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+
+            .the-excerpt {
+                display: none;
+                @include absCenter;
+            }
         }
 
 

@@ -1,0 +1,36 @@
+.post {
+
+    &__title {
+        padding: 0 4rem;
+        margin-bottom: 5rem;
+    }
+
+    &__date {
+        padding: 1rem 4rem;
+    }
+
+    &__content {
+        padding: 0 4rem;
+
+        p {
+            width: 100%;
+        }
+
+
+        a {
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            @include fullWidth();
+            // hack so it doesn't break container on mobile
+
+            @include respond('phone') {
+                left: 48%;
+                right: 48%;
+            }
+        }
+    }
+}

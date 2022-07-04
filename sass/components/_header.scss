@@ -1,23 +1,36 @@
 .site-header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 5rem;
+    margin-bottom: 5rem;
+    border-bottom: 1px solid $color-black;
 
 
     @include respond('mobile') {
         flex-direction: column;
     }
 
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     &__title {
-        // grid-row: 1/2;
-        // grid-column: 2/11;
+        width: auto;
+
+        a {
+            text-decoration: none;
+            font-family: "Didact Gothic", sans-serif;
+            font-family: Montserrat, sans-serif;
+        }
     }
 
     &__sub-title {
-        // grid-row: 4/5;
-        // grid-column: 3/10;
+        width: auto;
         font-size: 3rem;
     }
 
@@ -55,9 +68,27 @@
     }
 
     &__navigation {
+        margin-top: 5rem;
+        width: 50rem;
 
         &--menu {
             display: flex;
+            justify-content: space-between;
+
+            li {
+                list-style: none;
+
+                a {
+                    font-size: 2rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        padding-bottom: 0.2rem;
+                        outline: none;
+                        border-bottom: 2px solid $color-red;
+                    }
+                }
+            }
         }
     }
 }

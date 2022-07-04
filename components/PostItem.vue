@@ -6,7 +6,7 @@
 
     <h3>
       <nuxt-link :to="postLink">
-        <p v-html="post.title.rendered"></p>
+        <span v-html="post.title.rendered"></span>
       </nuxt-link>
     </h3>
     <div class="the-excerpt" v-html="post.excerpt.rendered"></div>
