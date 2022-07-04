@@ -1,8 +1,8 @@
 <template>
-    <section class="container">
+    <section class="places-list container">
         <div>
-            <h1 class="title">Places</h1>
-            <article>
+            <h1 class="places-list__title">Places</h1>
+            <article class="places-list__intro">
                 <p>On the site <a href="https://uraniumcity-history.com">Uranium City History Project</a>, I have a
                     section
                     called 'Places', where I a few guest authors write about notable places in and around Uranium City.

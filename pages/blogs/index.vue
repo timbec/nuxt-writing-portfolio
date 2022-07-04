@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="blog-list">
         <h1>Blog List</h1>
         <article>
             <p>Starting in 2006, when I lived on the now-demolished Heygate Estate in London's Elephand and Castle, I

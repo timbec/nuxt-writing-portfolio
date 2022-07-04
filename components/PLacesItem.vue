@@ -2,14 +2,14 @@
   <div class="places-item">
     <!-- Need to put in an 'if' statement to check if 
     // thumbnail exists. -->
-    <img v-bind:src="post.fimg_url" v-bind:alt="post.title.rendered">
+    <img v-bind:src="post.fimg_url" v-bind:alt="post.title.rendered" class="places-item__featured-image">
 
-    <h3>
+    <h3 class="places-item__title">
       <nuxt-link :to="placesLink">
         <p v-html="post.title.rendered"></p>
       </nuxt-link>
     </h3>
-    <div class="the-excerpt" v-html="post.excerpt.rendered"></div>
+    <div class="places-tem__excerpt" v-html="post.excerpt.rendered"></div>
   </div>
 </template>
 

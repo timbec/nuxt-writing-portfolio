@@ -3,6 +3,10 @@
     &__title {
         padding: 0 4rem;
         margin-bottom: 5rem;
+
+        @include respond('tab-port') {
+            text-align: center;
+        }
     }
 
     &__date {

@@ -108,6 +108,11 @@ a:hover {
 	color: #c6372c;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 .fade-enter-active,
 .fade-leave-active {
 	transition: opacity 5s;
@@ -304,6 +309,12 @@ body {
 	margin-bottom: 5rem;
 }
 
+@media only screen and (max-width: 56.25em) {
+	.post__title {
+		text-align: center;
+	}
+}
+
 .post__date {
 	padding: 1rem 4rem;
 }
@@ -338,6 +349,43 @@ body {
 		left: 48%;
 		right: 48%;
 	}
+}
+
+.post-item {
+	margin-bottom: 5rem;
+}
+
+.post-item img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 5rem;
+}
+
+.post-item h3 {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+.post-item h3 a {
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+.blog-list {
+	padding: 1rem 4rem;
+}
+
+.blog-list h1 {
+	margin-bottom: 5rem;
+}
+
+.places-list {
+	padding: 1rem 4rem;
+}
+
+.places-list__title {
+	text-align: center;
+	margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
