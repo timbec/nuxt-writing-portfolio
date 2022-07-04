@@ -1,23 +1,21 @@
 <template>
-    <div class="container">
-        <section>
-            <h1 class="title">Fiction</h1>
-            <p class="intro">
-                Some intro text about my fiction.
-            </p>
+    <section class="fiction-list container">
+        <h1 class="fiction-list__title">Fiction</h1>
+        <p class="fiction-list__intro">
+            Some intro text about my fiction.
+        </p>
 
-            <Loader v-if="$fetchState.pending" />
-            <div v-else>
-                <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
-                    :title="post.title" />
-            </div>
-        </section>
-    </div>
+        <Loader v-if="$fetchState.pending" />
+        <div v-else>
+            <fiction-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
+                :title="post.title" />
+        </div>
+    </section>
 </template>
 
 <script>
 import axios from "axios";
-import PostItem from "@/components/PostItem";
+import PostItem from "@/components/FictionItem";
 import Loader from "@/components/Loader";
 
 /**

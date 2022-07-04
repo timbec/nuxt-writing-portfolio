@@ -1,0 +1,19 @@
+// legacy code pulled in from WP. Might have to find another solution 
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.gallery-item {
+    max-width: 50rem;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}

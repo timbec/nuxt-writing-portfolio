@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    <h2 class="home-page__title">Welcome to the home page</h2>
+    <h2 class="home-page__title">Welcome to the home home page</h2>
     <div class="home-page-container">
       <Loader v-if="$fetchState.pending" />
       <section class="home-page__articles" v-else>

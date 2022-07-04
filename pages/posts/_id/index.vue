@@ -3,8 +3,8 @@
         <div class="single-post-page">
             <section class="post">
                 <h1 class="post__title" v-html="loadedPost[0].title.rendered"></h1>
-                <div class="post__details">
-                    <div class="post__date">Last updated on {{ loadedPost[0].date || date }}</div>
+                <div class="post__details post__date">
+                    Last updated on {{ loadedPost[0].date || date }}
                 </div>
                 <div class="post__content">
                     <div v-html="loadedPost[0].content.rendered"></div>
