@@ -1,0 +1,43 @@
+.post {
+    max-width: 80rem;
+    margin: 0 auto;
+
+    &__title {
+        text-align: center;
+        padding: 0 4rem;
+        margin-bottom: 5rem;
+
+        @include respond('tab-port') {
+            text-align: center;
+        }
+    }
+
+    &__date {
+        padding: 1rem 4rem;
+    }
+
+    &__content {
+        padding: 0 4rem;
+
+        p {
+            width: 100%;
+        }
+
+
+        a {
+            width: 100%;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            @include fullWidth();
+            // hack so it doesn't break container on mobile
+
+            @include respond('phone') {
+                left: 48%;
+                right: 48%;
+            }
+        }
+    }
+}

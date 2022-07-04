@@ -1,2 +1,11 @@
 @import "abstract/__abstracts";
 @import "base/__base";
+@import "components/__components";
+
+// individual pages
+@import "pages/home";
+@import "pages/single";
+@import "pages/fiction";
+@import "pages/blog-list";
+@import "pages/places";
+@import "pages/photos";

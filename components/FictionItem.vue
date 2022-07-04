@@ -1,15 +1,15 @@
 <template>
-  <div class="post-item">
+  <div class="fiction-item">
     <!-- Need to put in an 'if' statement to check if 
     // thumbnail exists. -->
     <img v-bind:src="post.fimg_url" v-bind:alt="post.title.rendered">
 
-    <h3>
+    <h3 class="fiction-item__title">
       <nuxt-link :to="postLink">
         <span v-html="post.title.rendered"></span>
       </nuxt-link>
     </h3>
-    <div class="the-excerpt" v-html="post.excerpt.rendered"></div>
+    <div class="fiction-item__excerpt" v-html="post.excerpt.rendered"></div>
   </div>
 </template>
 

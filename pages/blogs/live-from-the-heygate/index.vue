@@ -4,7 +4,7 @@
             <h1 class="title">Live From the Heygate</h1>
             <Loader v-if="$fetchState.pending" />
             <div v-else>
-                <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
+                <blog-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
                     :title="post.title" />
             </div>
         </div>
@@ -13,7 +13,7 @@
 
 <script>
 import axios from "axios";
-// import PostList from "@/components/PostList";
+import BlogItem from "@/components/BlogItem";
 import Loader from "@/components/Loader";
 
 /**

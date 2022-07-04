@@ -1,14 +1,15 @@
 <template>
-  <div class="container">
-    <div>
-      <h3 class="title">Home Page</h3>
+  <div class="home-page">
+    <h2 class="home-page__title">Welcome to the home home page</h2>
+    <div class="home-page-container">
       <Loader v-if="$fetchState.pending" />
-      <div v-else>
+      <section class="home-page__articles" v-else>
         <post-item v-for="post in posts" :post="post" :key="post.id" :id="post.slug" :slug="post.slug"
           :title="post.title" :thumbnail="post.fimg_url" />
-      </div>
+      </section>
     </div>
   </div>
+
 </template>
 
 <script>

@@ -1,0 +1,49 @@
+.home-page {
+    margin: 1rem 2rem;
+
+    &__articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .post-item {
+            width: 48%;
+            position: relative;
+
+            @include respond('tab-port') {
+                width: 100%;
+            }
+
+            h3 {
+                @include absCenter;
+
+                a {
+                    color: white;
+                    font-size: 3rem;
+                    text-decoration: none;
+
+                    &:hover {
+                        padding: .5rem;
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+
+            .the-excerpt {
+                display: none;
+                @include absCenter;
+            }
+        }
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.home-page-container {
+    display: flex;
+    flex-wrap: wrap;
+}
