@@ -41,7 +41,7 @@ export default {
     async fetch() {
         // get local site for now, so I can get featured images. 
         const { data: posts } = await axios.get(
-            "http://uchistory.local/wp-json/wp/v2/places"
+            "https://uraniumcity-history.com/wp-json/wp/v2/places"
         );
         this.posts = posts;
         console.log(this.posts);

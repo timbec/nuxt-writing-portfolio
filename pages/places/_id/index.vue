@@ -20,7 +20,7 @@ import axios from 'axios';
 
 export default {
     asyncData(context) {
-        return axios.get("http://uchistory.local/wp-json/wp/v2/places?slug=" + context.params.id)
+        return axios.get("https://uraniumcity-history.com/wp-json/wp/v2/places?slug=" + context.params.id)
             .then(res => {
                 // console.log(res.data[0]);
                 return {
