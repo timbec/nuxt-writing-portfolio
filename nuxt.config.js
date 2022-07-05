@@ -1,4 +1,6 @@
-export default {
+const pkg = require('./package');
+
+module.exports = {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: true,
 
@@ -37,8 +39,8 @@ export default {
     },
 
     transition: {
-      name: 'page',
-      mode: 'fade'
+      name: 'fade',
+      mode: 'out-in'
     }
   },
 
