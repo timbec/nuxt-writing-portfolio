@@ -30,3 +30,7 @@ Incredibly difficult getting the build process to work on Vercel. Some takeaways
 Two sources that helped me figure out the problem: 
 https://joela6z.medium.com/soluci%C3%B3n-error-no-output-directory-named-dist-found-after-the-build-completed-nuxt-a9e5a427348f
 https://stackoverflow.com/questions/57565766/npm-build-nuxt-build-does-not-create-dist-folder-in-amplifyaws-codebuild-usi/65660027#65660027
+
+- Need to create means to filter out 'places' posts, not written by me. For example - Del's piece. Problem is, I am actually the author since I posted it. Another field I can add? Maybe in ACF? 
+
+- have to add photo gallery popup and photo popup. 
