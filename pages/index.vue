@@ -3,10 +3,11 @@
     <h2 class="home-page__title">
       Welcome</h2>
     <article class="home-page__content">
-      <p>I write mostly fiction, published here and there. Currently working on a novel, tentatively title '' set in
+      <p>I write mostly fiction, published here and there. Currently working on a novel, tentatively title 'Crossings'
+        set in
         northern Canada, where I grew up.</p>
       <p>I also write occasional journalism, and maintained two blogs in the late '00s and early 10's. I recently
-        started blogging about technology at <a href="https://tim-beckett/blog">on my tech portfoli website.</a></p>
+        started blogging about technology at <a href="https://tim-beckett/blog">on my tech portfolio.</a></p>
       <p>I currently live in Brooklyn, NY with my wife and our cats.</p>
     </article>
     <div class="home-page-container">
