@@ -328,7 +328,7 @@ body {
 }
 
 .post {
-	max-width: 80rem;
+	max-width: 100rem;
 	margin: 0 auto;
 }
 
@@ -349,7 +349,7 @@ body {
 }
 
 .post__content {
-	padding: 0 4rem;
+	padding: 2rem 10rem;
 }
 
 .post__content p {
@@ -371,6 +371,9 @@ body {
 	position: relative;
 	right: 50%;
 	width: 144rem;
+	left: 45%;
+	right: 55%;
+	margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 37.5em) {

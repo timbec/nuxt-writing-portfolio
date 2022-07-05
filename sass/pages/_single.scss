@@ -1,5 +1,5 @@
 .post {
-    max-width: 80rem;
+    max-width: 100rem;
     margin: 0 auto;
 
     &__title {
@@ -17,7 +17,7 @@
     }
 
     &__content {
-        padding: 0 4rem;
+        padding: 2rem 10rem;
 
         p {
             width: 100%;
@@ -32,6 +32,9 @@
             max-width: 100%;
             height: auto;
             @include fullWidth();
+            left: 45%;
+            right: 55%;
+            margin-bottom: 5rem;
             // hack so it doesn't break container on mobile
 
             @include respond('phone') {

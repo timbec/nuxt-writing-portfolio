@@ -19,3 +19,18 @@ then, in vue templates, pass in featured image to the child component as:
 `<img v-bind:src="post.fimg_url" alt="">`
 
 can use `post.title` in alt tag, but be better to pull out the actual alt tag - might have to alter the output in functions.php to get all the thumbnail-image metadata. 
+
+Incredibly difficult getting the build process to work on Vercel. Some takeaways: 
+
+- make sure component names are exactly the same. 
+- local 'build' doesn't reflect Vercel. Also need to run `npm run generate`
+
+- put 'featured image' code on live UC site, then change URL to point to live site.
+
+Two sources that helped me figure out the problem: 
+https://joela6z.medium.com/soluci%C3%B3n-error-no-output-directory-named-dist-found-after-the-build-completed-nuxt-a9e5a427348f
+https://stackoverflow.com/questions/57565766/npm-build-nuxt-build-does-not-create-dist-folder-in-amplifyaws-codebuild-usi/65660027#65660027
+
+- Need to create means to filter out 'places' posts, not written by me. For example - Del's piece. Problem is, I am actually the author since I posted it. Another field I can add? Maybe in ACF? 
+
+- have to add photo gallery popup and photo popup. 
