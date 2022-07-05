@@ -20,8 +20,9 @@
 <script>
 import axios from "axios";
 ///import PostList from "@/components/PostList";
-import PlacesItem from "@/components/PlacesItem";
 import Loader from "@/components/Loader";
+import PlacesItem from "@/components/PlacesItem";
+
 
 /**
  * Need to bundles into store
