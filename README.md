@@ -18,18 +18,12 @@ https://github.com/netlify-labs/headless-wp-nuxt
 
 1) create endpoints for: 
     - Home Page
-    - Different categories
     - UC History Places pages
 
 1.5) Integrate Typescript? 
 
-2) Create pages for: 
-    - Home
-    - Fiction
-    - Non-Fiction
-    - Blogs (sub-category of Non-Fiction)
-    - UC Places
 
-3) Bring in basic styles from 'https://tim-beckett.com' for continuity. 
+2) Integrate Comments. Need more info around comments. 
 
-4) Integrate Comments
+3) add ability to contact.
+4) add ability to post comments.
